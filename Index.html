@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Documentation Page</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+	<meta charset="utf-8">
+</head>
+<body>
+
+	<nav id="navegation">
+		<header><h1>Ruby language</h1></header>
+		<div id="nav-links">
+			<a href="#Introduction" class="nav-link">Introduction</a> 
+			<br>
+			<a href="#Syntax" class="nav-link">Syntax</a>
+			<br>
+			<a href="#Classes_and_Objects" class="nav-link">Classes and Objects</a>
+			<br>
+			<a href="#Defining_a_Class" class="nav-link">Defining a Class</a>
+			<br>
+			<a href="#Variables_in_a_Class" class="nav-link">Variables in a Class</a>
+			<br>
+			<a href="#Reference" class="nav-link">Reference</a>
+		</div>
+	</nav>
+
+	<main id="main-doc">
+
+		
+		<section class="main-section">
+			<header id="Introduction"><h2>Introduction</h2></header>
+
+			<p> Ruby is a scripting language designed by Yukihiro Matsumoto, also known as Matz. It runs on a variety of platforms, such as Windows, Mac OS, and the various versions of UNIX. This tutorial gives a complete understanding on Ruby.</p>
+
+			<p>Ruby has features that are similar to those of Smalltalk, Perl, and Python. Perl, Python, and Smalltalk are scripting languages. Smalltalk is a true object-oriented language. Ruby, like Smalltalk, is a perfect object-oriented language. Using Ruby syntax is much easier than using Smalltalk syntax. to use Ruby you need : </p>
+			<ul>
+				<li>Some programming experience and knowledge of computer programs and programming languages in general.</li>
+				<li>you will need a latest computer like Intel Core i3 or i5 with a minimum of 2GB of RAM (4GB of RAM recommended)</li>
+			</ul>
+		</section>
+
+		<section class="main-section">
+			<header id="Syntax"><h2>Sytanx</h2></header>
+
+			<p>Let us write a simple program in ruby. All ruby files will have extension .rb. So, put the following source code in a test.rb file.</p>
+
+			<div class="codebox"><code
+			>#!/usr/bin/ruby -w<br>
+		    puts "Hello, Ruby!";
+		    </code></div>
+
+			<p> Here, we assumed that you have Ruby interpreter available in /usr/bin directory. Now, try to run this program as follows −</p>
+
+			<div class="codebox"><code>$ ruby test.rb</code></div>
+
+			<p>this will produce:</p>
+
+			<div class="codebox"><code>Hello, Ruby!</code></div>
+				
+
+		</section>
+
+		<section class="main-section">
+			<header id="Classes_and_Objects"><h2>Classes and Objects</h2></header>
+
+			<p>Ruby is a perfect Object Oriented Programming Language. The features of the object-oriented programming language include −</p>
+
+			<ul>
+				<li>Data Encapsulation</li>
+				<li>Data Abstraction</li>
+				<li>Polymorphism</li>
+				<li>Inheritance</li>
+			</ul>
+
+			<p>An object-oriented program involves classes and objects. A class is the blueprint from which individual objects are created. In object-oriented terms, we say that your bicycle is an instance of the class of objects known as bicycles.<br> A class Vehicle can be defined as − </p>
+
+			<div class="codebox"><code>Class Vehicle {<br>
+			<br>
+			   Number no_of_wheels<br>
+			   Number horsepower<br>
+			   Characters type_of_tank<br>
+			   Number Capacity<br>
+			   Function speeding {<br>
+			   }<br>
+			   <br>
+			   Function driving {<br>
+			   }<br>
+			   <br>
+			   Function halting {<br>
+			   }
+			</code></div>
+
+		</section>
+		
+		<section class="main-section">
+			<header><h2 id="Defining_a_Class">Defining a Class</h2></header>
+
+			<p>To implement object-oriented programming by using Ruby, you need to first learn how to create objects and classes in Ruby.<br>
+			A class in Ruby always starts with the keyword class followed by the name of the class. The name should always be in initial capitals. The class Customer can be displayed as −</p>
+			
+				
+			
+			<div class="codebox"><code>class Customer<br>
+					end
+			</code></div>
+			<p>You terminate a class by using the keyword end. All the data members in the class are between the class definition and the end keyword.</p>
+		</section>
+		
+		<section class="main-section">
+			<header id="Variables_in_a_Class"><h2>Variables in a Class</h2></header>
+
+			<p>Ruby provides four types of variables −</p>
+
+			<ul>
+				<li><strong>Local Variables</strong> − Local variables are the variables that are defined in a method. Local variables are not available outside the method. You will see more details about method in subsequent chapter. Local variables begin with a lowercase letter or _.</li>
+				<li><strong>Instance Variables</strong> − Instance variables are available across methods for any particular instance or object. That means that instance variables change from object to object. Instance variables are preceded by the at sign (@) followed by the variable name.</li>
+				<li><strong>Class Variables</strong> − Class variables are available across different objects. A class variable belongs to the class and is a characteristic of a class. They are preceded by the sign @@ and are followed by the variable name.</li>
+				<li><strong>Global Variables</strong> − Class variables are not available across classes. If you want to have a single variable, which is available across classes, you need to define a global variable. The global variables are always preceded by the dollar sign ($).</li>
+			</ul>
+
+			<h4>example</h4>
+
+			<p>Using the class variable @@no_of_customers, you can determine the number of objects that are being created. This enables in deriving the number of customers.</p>
+
+			<div class="codebox"><code>class Customer <br>
+			   @@no_of_customers = 0 <br>
+				end<br>
+			</code></div>		
+		</section>
+
+		<section class="main-section">
+			<header id="Reference"><h2>Reference</h2></header>	
+			 <ul>
+			 	<li>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com/ruby/">Tutorialspoint</a></li>
+			 </ul>
+		</section>
+
+	</main>
+
+
+</body>
+</html>

@@ -1,0 +1,75 @@
+html{font-family: sans-serif;
+color: #000c;}
+
+h1 {color: black}
+
+h2{color: black;}
+
+.codebox{background-color: #80808099;
+	padding: 20px;
+	position: relative;
+width: 400px;
+margin:auto;
+}
+
+#navegation{
+	top: 0px;
+	position:fixed;
+	padding-right: 15px;
+	border-right: 10px red solid;
+	margin-left: 1px;
+	font-size: 20px;
+	background-color: white;
+
+}
+
+#main-doc{ margin-left: 300px; }
+
+
+
+
+
+#nav-links{ 
+display: grid;
+overflow-y: auto;
+line-height: 1.5;
+height: 400px;
+
+
+ }
+
+ .nav-link{text-decoration: none;
+ 	color: #000c;
+ 	font-size: 20px;
+ 	padding: 10px;
+ 	border-top: 5px solid grey;
+ }
+
+
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 800px){
+	#navegation{
+
+		position:static;
+		text-align: center;
+		justify-content: center;
+		display: flex;
+		flex-direction: column;
+		border-right: 0px ;
+	}
+    
+    #main-doc{ margin:auto; }
+
+     .nav-link{padding: 0px;
+     }
+
+    #nav-links{ 
+		display: grid;
+		overflow-y: auto;
+		line-height: 1.5;
+		height: 300px;
+
+
+		 }
+}
